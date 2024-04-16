@@ -28,15 +28,15 @@ async def main():
      ╚═════╝ ╚═╝  ╚═╝ ╚═════╝ ╚══════╝   ╚═╝       ╚═╝     ╚═╝╚═╝  ╚═══╝ ╚═════╝               
     """ + Fore.LIGHTYELLOW_EX)
 
-    victim = str(input("[-] User to ping: "))
-    victimChannel = int(input("[-] Message channel: "))
+    victim = str(input("[-] User ID: "))
+    victimChannel = int(input("[-] Channel ID: "))
     repeats = int(input("[-] Ping repeats: "))
     if repeats > 1:
         pingInterval = int(input("[-] Ping interval: "))
     else:
         pingInterval = 0
-    pingmessage = input("[-] Message (Press enter for no message): ")
-    deletemessageInput = input("[-] Ghost ping?: ")
+    pingmessage = input("[-] Message: ")
+    deletemessageInput = input("[-] Ghost Ping?: ")
 
     if pingmessage == "":
         pingmessage = None
@@ -79,7 +79,7 @@ async def pingg(user, victimChannel, pingInterval, repeats, pingmessage, pingmes
         print(Fore.CYAN + "[+] Pinged " + str(counter) + " time(s)..")
 
         if counter == repeats:
-            print(Fore.LIGHTYELLOW_EX + "\n[+] All done!")
+            print(Fore.LIGHTYELLOW_EX + "\n[+] All done")
             await main()
 
         await asyncio.sleep(pingInterval)
