@@ -57,7 +57,7 @@ async def main():
     elif len(victim) == 19:
         user = "<" + victim + ">"
     else:
-        print(Fore.RED + "Invalid User!")
+        print(Fore.RED + "Invalid User")
     await pingg(user, victimChannel, pingInterval, repeats, pingmessage, pingmessageBool, deletemessageBool)
 
 async def pingg(user, victimChannel, pingInterval, repeats, pingmessage, pingmessageBool, deletemessageBool):
