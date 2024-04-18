@@ -36,7 +36,7 @@ async def main():
     else:
         pingInterval = 0
     pingmessage = input("[-] Message: ")
-    deletemessageInput = input("[-] Ghost Ping?: ")
+    deletemessageInput = input("[-] Ghost Ping? (y/n): ")
 
     if pingmessage == "":
         pingmessage = None
