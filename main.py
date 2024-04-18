@@ -79,7 +79,7 @@ async def pingg(user, victimChannel, pingInterval, repeats, pingmessage, pingmes
         print(Fore.CYAN + "[+] Pinged " + str(counter) + " time(s)..")
 
         if counter == repeats:
-            print(Fore.LIGHTYELLOW_EX + "\n[+] All done")
+            print(Fore.LIGHTYELLOW_EX + "\n[+] all done")
             await main()
 
         await asyncio.sleep(pingInterval)
