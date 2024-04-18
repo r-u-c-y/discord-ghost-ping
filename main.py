@@ -30,7 +30,7 @@ async def main():
 
     victim = str(input("[-] User ID: "))
     victimChannel = int(input("[-] Channel ID: "))
-    repeats = int(input("[-] Ping count: "))
+    repeats = int(input("[-] Ping amount: "))
     if repeats > 1:
         pingInterval = int(input("[-] Ping interval: "))
     else:
