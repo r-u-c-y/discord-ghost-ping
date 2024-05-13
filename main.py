@@ -11,7 +11,7 @@ with open('token.json') as f:
     data = json.load(f)
 
 token = data['token']
-bot = commands.Bot(command_prefix="*!*", self_bot=True)
+bot = commands.Bot(command_prefix="!", self_bot=True)
 
 async def main():
     if os == "Windows":
@@ -79,7 +79,7 @@ async def pingg(user, victimChannel, pingInterval, repeats, pingmessage, pingmes
         print(Fore.CYAN + "[+] Pinged " + str(counter) + " time(s)..")
 
         if counter == repeats:
-            print(Fore.LIGHTYELLOW_EX + "\n[+] all done")
+            print(Fore.LIGHTYELLOW_EX + "\n[+] all done!")
             await main()
 
         await asyncio.sleep(pingInterval)
